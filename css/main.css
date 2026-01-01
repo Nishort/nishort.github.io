@@ -1,0 +1,98 @@
+/* Background */
+.dark-site-background {
+  background-color: #151824;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; 
+}
+
+body {
+  font-family: "Mono", "Consolas", "MS PGothic", sans-serif;
+  padding: 20px;
+
+  background-image: url("../img/cogs2.gif");
+  background-size: 4%;
+  background-attachment: fixed;
+
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.scroll_diag { /*Diagonal background scrolling*/
+  animation: diag 120s linear infinite;
+}
+
+@keyframes diag {
+  0% {
+    background-position-x: 0%;
+    background-position-y: 100%;
+  }
+  100% {
+    background-position-x: 100%;
+    background-position-y: 0%;
+  }
+}
+
+.anim_bounce {
+  animation: bounce 1s ease-in-out infinite; 
+}
+@keyframes bounce {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.02);}
+  100% {transform: scale(1);}
+}
+
+.content-container {
+  width: 78%; 
+  padding: 3%;
+  margin: 0 auto; 
+  background-color: #151824;
+}
+
+/* Video */
+.responsive-video-container {
+    width: 100%;
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+.responsive-video-container video {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.video-text-overlay {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 
+      -1px -1px 0 #151824,
+      1px -1px 0 #151824,
+      -1px 1px 0 #151824,
+      1px 1px 0 #151824;
+  -webkit-text-stroke: 1px #151824;
+  padding: 10px;
+}
+
+.video-image-overlay {
+  position: absolute;
+  top: 0%;
+  margin-top: 10%;
+  margin-left: 0%;
+  width: 30%;
+}
+
+/* audio */
+.audio-player {
+  filter: invert(100%); 
+  background-color: white;
+  border-radius: 15px;
+  width: "50%"; 
+  height: 30px;
+  margin-top: 5px;
+}
