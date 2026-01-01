@@ -1,6 +1,108 @@
+<!DOCTYPE html>
 <html>
-<body>
-  <h1>Fish</h1>
-  <p>123.</p>
-</body>
+  <head>
+    <title>(*・ω・)ﾉ Nishort </title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link href="./css/main.css" rel="stylesheet"/>
+    <link href="./css/rpg.css" rel="stylesheet"/>
+    <link href="./css/dashboard.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="dark-site-background scroll_diag">
+
+    <div class="content-container ">
+
+      <div class="rpg-status-container">
+        <!-- Icon -->
+        <div class="rpg-icon">
+          <img src="./img/rpg-icon.png" alt="Персонаж">
+        </div>
+        
+        <!-- Info -->
+        <div class="rpg-info">
+          <h2 class="rpg-name">Nick Nishort 🫧</h2>
+          <p class="rpg-level">Class: <span style="color:whitesmoke">game developer</span></p>
+          <p class="rpg-level">Level: <span id="rpgLevelNum" style="color:whitesmoke">25</span></p>
+            
+          <!-- HP -->
+          <div class="rpg-bar-container hp-bar">
+            <div class="rpg-bar-label">
+              <span>HP</span>
+              <span id="rpgHpText">75/100</span>
+            </div>
+            <div class="rpg-bar">
+              <div id="rpgHpBar" class="rpg-bar-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+            
+          <!-- MP -->
+          <div class="rpg-bar-container mp-bar">
+            <div class="rpg-bar-label">
+              <span>MP</span>
+              <span id="rpgMpText">40/60</span>
+            </div>
+            <div class="rpg-bar">
+              <div id="rpgMpBar" class="rpg-bar-fill" style="width: 66%;"></div>
+            </div>
+          </div>
+            
+          <p id="rpgCharStatus" class="rpg-status">Exploring something!</p>
+        </div>
+      </div>
+
+      <div class="dashboard-container">
+        <div class="dashboard-column news-column">
+          <h3 class="column-title">📜 Shattered Memories</h3>
+          <div class="scrollable-content" id="newsContent">
+            <p><strong>[2026.01.01]</strong> This site has been created!</p>
+            <p><strong>[2025.12.31]</strong> Celebrating New Year's Eve!</p>
+            <p><strong>[2025.12.28]</strong> RU translation for "Endless Monday: Dream and Deadlines" has been released!</p>
+            <p><strong>[2025.12.13]</strong> Visited some big IRL event o(>ω<)o </p>
+            <p><strong>[2025.07.28]</strong> Finally finished the first article about how I develop 3d games on GameMaker!!! It was hard (＃￣ω￣)</p>
+            <p><strong>[20XX.XX.XX]</strong> ᛏᚺᛖᚱᛖ ᚹᚨᛊ ᛊᛟᛗᛖᚦᛁᛜ ᛒᚢᛏ ᛁ ᛞᛟ ᚾᛟᛏ ᚱᛖᛗᛖᛗᛒᛖᚱ</p>
+          </div>
+        </div>
+                
+        <!-- Integrations -->
+        <div class="dashboard-column social-column">
+          <h3 class="column-title">🌐 Integrations</h3>
+          <div class="social-grid">
+            <a href="https://steamcommunity.com/id/LD_Nyay/" class="social-icon" target="_blank" title="Steam">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam">
+            </a>
+            <a href="https://x.com/Nick_NiShort" class="social-icon" target="_blank" title="Twitter / X">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="Twitter">
+            </a>
+            <a href="https://jill-of-all-trades.github.io/" class="social-icon" target="_blank" title="Nishort std." style="color:white; text-decoration: none; font-size: 1.5em;">
+              (◐ω◑ )
+            </a>
+          </div>
+          
+          <div class="music-sidebar">
+            <div class="music-gif">
+                <img src="./img/cassette.gif" alt="cassette">
+            </div>
+            <div class="music-info">
+              <p class="music-title">CQ 「Eli.」from What a Wonderful World's End</p>
+              <audio id="audio_casette" controls autoplay loop class="simple-audio">
+                <source src="./audio/CQ-eli.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  
+    </div>
+
+    <script src="./js/rpg.js" defer></script>
+    <script defer>
+        var audio = document.getElementById("audio_casette");
+        audio.volume = 0.1;
+    </script>
+  </body>
 </html>
