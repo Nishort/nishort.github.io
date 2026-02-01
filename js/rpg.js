@@ -74,5 +74,4 @@ function updateDailyStats() {
   document.getElementById('rpgCharStatus').textContent = getSeededChoice(statuses, currentSeed++);
 }
 
-// Запускаем функцию при загрузке страницы
 document.addEventListener('DOMContentLoaded', updateDailyStats);

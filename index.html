@@ -7,6 +7,7 @@
     <link href="./css/main.css" rel="stylesheet"/>
     <link href="./css/rpg.css" rel="stylesheet"/>
     <link href="./css/dashboard.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/luck.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,6 +59,11 @@
         <div class="dashboard-column news-column">
           <h3 class="column-title">📜 Shattered Memories</h3>
           <div class="scrollable-content" id="newsContent">
+            <p><strong>[2026.02.01]</strong> Add useless card game to check your luck! Cards images created by 
+              <a href="https://ivoryred.itch.io/pixel-poker-cards" target="_blank" title="Itch io" style="color:white;">ivoryred</a>
+            </p>
+            <p><strong>[2026.01.31]</strong> Terraria has a big update! May be I will check it out</p>
+            <p><strong>[2026.01.25]</strong> Finished Lunacid 100%, cool. I didn't even know that the game was from the creator of "Spooky's Jump Scare Mansion"</p>
             <p><strong>[2026.01.12]</strong> Holidays ended, back to work ( ╥ω╥ )</p>
             <p><strong>[2026.01.10]</strong> Finished Abiotic Factor. Probably the best 3D coop survival game I have ever played!</p>
             <p><strong>[2026.01.01]</strong> This site has been created!</p>
@@ -84,6 +90,56 @@
             </a>
           </div>
           
+          <!-- <div>
+            <img src="./img/neco-arc.gif" alt="Neco" style="height: 100px;">
+          </div> -->
+
+          <div class="poker-container">
+            <div class="dealer-section">
+              <img src="./img/neco-arc.gif" alt="Dealer" class="dealer-img">
+            </div>
+            
+            <div class="game-section">
+              <div class="cards-container">
+                <div class="card" data-index="0">
+                  <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back"></div>
+                  </div>
+                </div>
+                <div class="card" data-index="1">
+                  <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back"></div>
+                  </div>
+                </div>
+                <div class="card" data-index="2">
+                  <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back"></div>
+                  </div>
+                </div>
+                <div class="card" data-index="3">
+                  <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back"></div>
+                  </div>
+                </div>
+                <div class="card" data-index="4">
+                  <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="game-info">
+                <div class="result-message" id="resultMessage">Click cards to reveal</div>
+                <button class="reset-btn" id="resetBtn">Try again</button>
+              </div>
+            </div>
+          </div> 
+
           <div class="music-sidebar">
             <div class="music-gif">
                 <img src="./img/cassette.gif" alt="cassette">
@@ -102,6 +158,7 @@
     </div>
 
     <script src="./js/rpg.js" defer></script>
+    <script src="./js/luck.js"></script>
     <script defer>
         var audio = document.getElementById("audio_casette");
         audio.volume = 0.1;
