@@ -1,4 +1,4 @@
-/* Основные стили контейнера */
+
 .rpg-status-container {
   display: flex;
   align-items: flex-start;
@@ -14,7 +14,7 @@
   position: relative;
 }
 
-/* Псевдоэлемент для старинного эффекта */
+/* Pseudo-retro */
 .rpg-status-container::before {
   content: '';
   position: absolute;
@@ -27,7 +27,7 @@
   pointer-events: none;
 }
 
-/* Стили для иконки */
+/* Icon */
 .rpg-icon {
   width: 20vw;
   height: 20vw;
@@ -47,7 +47,7 @@
   object-fit: cover;
 }
 
-/* Если нет изображения - показываем заглушку */
+/* Icon blob */
 .rpg-icon::before {
   content: "?";
   font-size: 5vw;
@@ -59,7 +59,7 @@
   display: flex;
 }
 
-/* Контейнер для информации */
+/* Info */
 .rpg-info {
   flex: 1;
   display: flex;
@@ -67,7 +67,7 @@
   gap: 8px;
 }
 
-/* Стили для текстовых элементов */
+/* Text */
 .rpg-name {
   font-size: 2.5rem;
   font-weight: bold;
@@ -93,7 +93,7 @@
   border-left: 3px solid #2ecc71;
 }
 
-/* Общие стили для полосок */
+/* Bars */
 .rpg-bar-container {
   width: 100%;
   margin: 5px 0;
@@ -122,12 +122,11 @@
   position: relative;
 }
 
-/* Стили для HP бара */
+/* HP */
 .hp-bar .rpg-bar-fill {
   background: linear-gradient(90deg, #47B9F7, #B5E3FC);
 }
 
-/* Эффект для HP */
 .hp-bar .rpg-bar-fill::after {
   content: '';
   position: absolute;
@@ -142,12 +141,12 @@
   animation: shimmer 2s infinite;
 }
 
-/* Стили для MP бара */
+/* MP */
 .mp-bar .rpg-bar-fill {
   background: linear-gradient(90deg, #4A47F7, #B6B5FC);
 }
 
-/* Анимация для эффекта мерцания */
+/* Shimmer */
 @keyframes shimmer {
   0% { transform: translateX(-100%); }
   100% { transform: translateX(100%); }

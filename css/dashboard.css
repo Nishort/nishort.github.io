@@ -39,7 +39,7 @@
 .news-column .scrollable-content {
   flex-grow: 1;
   overflow-y: auto;
-  max-height: 300px;
+  max-height: 400px; /* 300 px */
   padding-right: 10px;
   margin-bottom: 15px;
   border: 1px solid #393e46;
