@@ -98,8 +98,9 @@ class PokerGame {
         audioPath += 'necoarc-winnig.mp3'; break;
     }
 
-    const audio = new Audio(audioPath)
-    audio.play()
+    const audio = new Audio(audioPath);
+    audio.volume = 0.25;
+    audio.play();
 
     this.resultMessage.textContent = handName;
     //this.resetBtn.style.display = 'block';

@@ -8,7 +8,8 @@
 }
 
 body {
-  font-family: "Mono", "Consolas", "MS PGothic", sans-serif;
+  /*font-family: "Mono", "Consolas", "MS PGothic", sans-serif;*/
+  font-family: "Cascadia Mono", sans-serif;
   padding: 20px;
 
   background-image: url("../img/cogs2.gif");
