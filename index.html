@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>(*・ω・)ﾉ Nishort </title>
+    <title>(*・ω・)ﾉ ようこそ！ </title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <link href="./css/main.css" rel="stylesheet"/>
@@ -11,7 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
   </head>
   <body class="dark-site-background scroll_diag">
 
@@ -26,8 +27,8 @@
         <!-- Info -->
         <div class="rpg-info">
           <h2 class="rpg-name">Nick Nishort 🫧</h2>
-          <p class="rpg-level">Class: <span style="color:whitesmoke">game developer</span></p>
-          <p class="rpg-level">Level: <span id="rpgLevelNum" style="color:whitesmoke">25</span></p>
+          <p class="rpg-level">Class: <span style="color:whitesmoke">game developer / ゲームクリエイター</span></p>
+          <p class="rpg-level">Level: <span id="rpgLevelNum" style="color:whitesmoke">26</span></p>
             
           <!-- HP -->
           <div class="rpg-bar-container hp-bar">
@@ -57,9 +58,10 @@
 
       <div class="dashboard-container">
         <div class="dashboard-column news-column">
-          <h3 class="column-title">📜 Shattered Memories</h3>
+          <h3 class="column-title">📜 Shattered Memories / 散った記憶 </h3>
           <div class="scrollable-content" id="newsContent">
-            <p><strong>[2026.02.01]</strong> Added useless card game to check your luck! Cards images created by 
+            <p><strong>[2026.03.26]</strong> Minor content/visual changes~</p>
+            <p><strong>[2026.02.01]</strong> Add useless card game to check your luck! Cards images created by 
               <a href="https://ivoryred.itch.io/pixel-poker-cards" target="_blank" title="Itch io" style="color:white;">ivoryred</a>
             </p>
             <p><strong>[2026.01.31]</strong> Terraria has a big update! May be I will check it out</p>
@@ -77,7 +79,7 @@
                 
         <!-- Integrations -->
         <div class="dashboard-column social-column">
-          <h3 class="column-title">🌐 Integrations</h3>
+          <h3 class="column-title">🌐 Socials / リンク</h3>
           <div class="social-grid">
             <a href="https://steamcommunity.com/id/LD_Nyay/" class="social-icon" target="_blank" title="Steam">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam">
@@ -89,11 +91,21 @@
               (◐ω◑ )
             </a>
           </div>
-          
-          <!-- <div>
-            <img src="./img/neco-arc.gif" alt="Neco" style="height: 100px;">
-          </div> -->
 
+          <!-- Tape Player -->
+          <div class="music-sidebar">
+            <div class="music-gif">
+                <img src="./img/cassette.gif" alt="cassette">
+            </div>
+            <div class="music-info">
+              <p class="music-title">CQ 「Eli.」from What a Wonderful World's End</p>
+              <audio id="audio_casette" controls loop class="simple-audio">
+                <source src="./audio/CQ-eli.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+
+          <!-- Mini Game -->
           <div class="poker-container">
             <div class="dealer-section">
               <img src="./img/neco-arc.gif" alt="Dealer" class="dealer-img">
@@ -139,18 +151,6 @@
               </div>
             </div>
           </div> 
-
-          <div class="music-sidebar">
-            <div class="music-gif">
-                <img src="./img/cassette.gif" alt="cassette">
-            </div>
-            <div class="music-info">
-              <p class="music-title">CQ 「Eli.」from What a Wonderful World's End</p>
-              <audio id="audio_casette" controls autoplay loop class="simple-audio">
-                <source src="./audio/CQ-eli.mp3" type="audio/mpeg">
-              </audio>
-            </div>
-          </div>
 
         </div>
       </div>
